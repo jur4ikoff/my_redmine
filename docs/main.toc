@@ -1,0 +1,17 @@
+\contentsline {section}{РЕФЕРАТ}{4}{section*.1}%
+\babel@toc {russian}{}\relax 
+\contentsline {section}{ВВЕДЕНИЕ}{6}{section*.2}%
+\contentsline {section}{\numberline {1}Аналитический раздел}{8}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Описать типовые процессы и роли в redmine, связанные с учебным процессом}{8}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Описать сущности средства управления проектами redmine}{8}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Анализ существующих решений в области СУБД}{8}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Иерархическая модель данных}{8}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Сетевая модель данных}{9}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Реляционная модель данных}{9}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Документоориентированная модель данных}{11}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}Объектно-ориентированная модель данных}{11}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.3.6}Колоночная модель данных}{12}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}Графовая модель данных}{12}{subsubsection.1.3.7}%
+\contentsline {subsubsection}{\numberline {1.3.8}Преимущества и недостатки}{12}{subsubsection.1.3.8}%
+\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{14}{section*.3}%
+\contentsfinish 

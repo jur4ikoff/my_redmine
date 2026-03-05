@@ -1,0 +1,108 @@
+\phantomsection\section*{ПРИЛОЖЕНИЕ Б}\addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ Б}
+
+\begin{lstlisting}[language=C++, caption={Реализация алгоритма рендера части карта}, captionpos=b, label=list:render-task]
+  for (int i = tile.i; i < tile.end_i; i++)
+  {
+    if (cancel_running)
+      break;
+    for (int j = tile.j; j < tile.end_j; j++)
+    {
+      if (cancel_running)
+        break;
+      Color pixel_color(0, 0, 0);
+      for (int sample = 0; sample < _camera.samples_per_pixel; sample++)
+      {
+        if (cancel_running)
+          break;
+        Ray r = _camera.get_ray(j, i);
+        pixel_color += _camera.ray_color(r, _camera.max_depth, world, cancel_running);
+      }
+      color_matrix.at(i, j) = _camera.pixel_samples_scale * pixel_color;
+    }
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=C++, caption={Реализация алгоритма получения луча из камеры}, captionpos=b, label=list:get-ray]
+Ray get_ray(int i, int j) const
+    {
+        auto offset = sample_square();
+        auto pixel_sample = pixel00_loc + ((i + offset.x()) * pixel_delta_u) + ((j + offset.y()) * pixel_delta_v);
+
+        auto ray_origin = (_camera.defocus_angle <= 0) ? center : defocus_disk_sample();
+        auto ray_direction = pixel_sample - ray_origin;
+
+        return Ray(ray_origin, ray_direction);
+    }
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption={Реализация алгоритма получения цвета  луча}, captionpos=b, label=list:ray-color]
+Color ray_color(const Ray &r, int depth, const Hittable &world, volatile bool &cancel_running) const
+    {
+        if (cancel_running)
+            return Color(0, 0, 0);
+
+        if (depth <= 0)
+            return Color(0, 0, 0);
+
+        HitRecord rec;
+        if (!world.hit(r, Interval(0.001, infinity), rec))
+            return background;
+
+        Ray scattered;
+        Color attenuation;
+        Color color_from_emission = rec.mat->emitted(rec.u, rec.v, rec.p);
+        // Попытка рассеяния луча
+        if (!rec.mat->scatter(r, rec, attenuation, scattered))
+            return color_from_emission;
+
+        Color color_from_scatter = attenuation * ray_color(scattered, depth - 1, world, cancel_running);
+
+        return color_from_emission + color_from_scatter;
+    }
+\end{lstlisting}
+
+\begin{lstlisting}[language=C++, caption={Реализация алгоритма нахождения пересечения с приземленным туманом}, captionpos=b, label=list:hit-fog]
+Color ray_color(const Ray &r, int depth, const Hittable &world, volatile bool &cancel_running) const
+  bool hit(const Ray &r, Interval ray_t, HitRecord &rec) const override
+  {
+    HitRecord rec1, rec2;
+    if (!is_visible)
+      return false;
+    if (!boundary->hit(r, Interval::universe, rec1))
+      return false;
+    if (!boundary->hit(r, Interval(rec1.t + 0.0001, infinity), rec2))
+      return false;
+
+    auto t0 = std::fmax(rec1.t, ray_t.min);
+    auto t1 = std::fmin(rec2.t, ray_t.max);
+    if (t0 >= t1)
+      return false;
+
+    auto ray_len = r.direction().length();
+    auto dist = (t1 - t0) * ray_len;
+
+    auto hit_dist = -std::log(random_double()) / density;
+    if (hit_dist > dist)
+      return false;
+
+    auto t = t0 + hit_dist / ray_len;
+    Point3 p = r.at(t);
+
+    double raw_noise = noise.noise(scale * p);
+    double noise_val = 0.2 + 0.8 * std::fabs(raw_noise);
+    double y = p.y();
+    double height_factor = std::exp(-height_falloff * std::max(y, -10.0));
+
+    double real_density = density * noise_val * height_factor;
+
+    if (real_density < 1e-5 || random_double() > std::min(real_density, 1.0))
+      return false;
+
+    rec.t = t;
+    rec.p = p;
+    rec.normal = Vec3(0, 1, 0);
+    rec.front_face = true;
+    rec.mat = phase_function;
+    return true;
+}
+\end{lstlisting}
