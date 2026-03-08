@@ -498,7 +498,6 @@ INPUT ./diag/bpmn-1.pdf
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/latt1728.tfm
 INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/latt1440.tfm
 INPUT ./report/07-bibliography.tex
 INPUT ./report/07-bibliography.tex
@@ -533,4 +532,3 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1728.pfb
