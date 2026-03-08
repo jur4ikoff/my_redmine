@@ -1,6 +1,153 @@
 \section{Аналитический раздел}
 \subsection[Описать типовые процессы и роли в redmine, связанные с учебным процессом]{Описать типовые процессы и роли в redmine, связанные с учебным процессом}
+В текущем учебном процессе можно выделить следующие сущности:
+\begin{itemize}
+    \item задача;
+    \item система управления проектами;
+    \item студент;
+    \item преподаватель;
+    \item система управления проектами (gitlab).
+\end{itemize}
+
+Объекты, которые взаимодействует с данными сущностями:
+\begin{itemize}
+    \item генератор задач;
+    \item администратор системы управления проектами;
+    \item скрипт для создания задач в системе управления проктами;
+    \item TODO gitlab bot. 
+\end{itemize}
+
+На основании текущего учебного процесса была построена BPMN 2.0 диаграмма, представленная на рисунке~\ref{fig:bpmn-1}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{diag/bpmn-1.pdf}
+	\caption{Диаграмма BPMN-2.0 учебного процесса}
+	\label{fig:bpmn-1}
+\end{figure}
+
 \subsection[Описать сущности средства управления проектами redmine]{Описать сущности средства управления \\ проектами redmine}
+
+На основе анализа функциональных требований к системе управления проектами были выделены следующие ключевые сущности:
+\begin{enumerate}
+\item \textbf{Пользователь (User)} — субъект, взаимодействующий с системой.
+\item \textbf{Проект (Project)} — контейнер для задач, версий и документов.
+\item \textbf{Задача (Issue)} — единица работы, требующая выполнения.
+\item \textbf{Версия (Version)} — релиз или веха проекта.
+\item \textbf{Репозиторий (Repository)} — связь с внешней системой контроля версий.
+\item \textbf{Журнал изменений (Journal)} — история модификации сущностей.
+\end{enumerate}
+\section{Описание атрибутов сущностей}
+Ниже приведены таблицы с описанием полей для каждой выделенной сущности. Типы данных указаны в соответствии с распространенными СУБД (MySQL/PostgreSQL), используемыми в Redmine.
+\subsection{Сущность \texttt{users}}
+Данная таблица хранит учетные данные и профильную информацию о пользователях системы.
+% \begin{table}[h!]
+% \centering
+% \caption{Атрибуты сущности \texttt{users}}
+% \label{tab:users}
+% \begin{tabular}{lll}
+% \toprule
+% \textbf{Поле} & \textbf{Тип данных} & \textbf{Описание} \
+% \midrule
+% \texttt{id} & INTEGER (PK) & Уникальный идентификатор пользователя \
+% \texttt{login} & VARCHAR(255) & Уникальное имя для входа \
+% \texttt{password_hash} & VARCHAR(64) & Хэш пароля \
+% \texttt{firstname} & VARCHAR(255) & Имя \
+% \texttt{lastname} & VARCHAR(255) & Фамилия \
+% \texttt{mail} & VARCHAR(255) & Адрес электронной почты \
+% \texttt{admin} & BOOLEAN & Флаг администратора \
+% \texttt{status} & INTEGER & Статус активности (активен/блокирован) \
+% \texttt{created_on} & DATETIME & Дата создания записи \
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \subsection{Сущность \texttt{projects}}
+% Таблица содержит информацию о проектах, включая их иерархию и статус.
+% \begin{table}[h!]
+% \centering
+% \caption{Атрибуты сущности \texttt{projects}}
+% \label{tab:projects}
+% \begin{tabular}{lll}
+% \toprule
+% \textbf{Поле} & \textbf{Тип данных} & \textbf{Описание} \
+% \midrule
+% \texttt{id} & INTEGER (PK) & Уникальный идентификатор проекта \
+% \texttt{name} & VARCHAR(255) & Название проекта \
+% \texttt{identifier} & VARCHAR(255) & Уникальный URL-идентификатор \
+% \texttt{description} & TEXT & Подробное описание \
+% \texttt{parent_id} & INTEGER (FK) & Ссылка на родительский проект \
+% \texttt{status} & INTEGER & Статус проекта (активен/закрыт) \
+% \texttt{created_on} & DATETIME & Дата создания \
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \subsection{Сущность \texttt{issues}}
+% Центральная сущность системы, представляющая задачу или ошибку.
+% \begin{table}[h!]
+% \centering
+% \caption{Атрибуты сущности \texttt{issues}}
+% \label{tab:issues}
+% \begin{tabular}{lll}
+% \toprule
+% \textbf{Поле} & \textbf{Тип данных} & \textbf{Описание} \
+% \midrule
+% \texttt{id} & INTEGER (PK) & Уникальный идентификатор задачи \
+% \texttt{project_id} & INTEGER (FK) & Ссылка на проект \
+% \texttt{tracker_id} & INTEGER (FK) & Тип задачи (баг, функция и т.д.) \
+% \texttt{status_id} & INTEGER (FK) & Текущий статус задачи \
+% \texttt{author_id} & INTEGER (FK) & Автор задачи \
+% \texttt{assigned_to_id} & INTEGER (FK) & Исполнитель задачи \
+% \texttt{subject} & VARCHAR(255) & Краткая тема задачи \
+% \texttt{description} & TEXT & Подробное описание \
+% \texttt{priority_id} & INTEGER (FK) & Приоритет выполнения \
+% \texttt{fixed_version_id} & INTEGER (FK) & Целевая версия для задачи \
+% \texttt{created_on} & DATETIME & Дата создания \
+% \texttt{updated_on} & DATETIME & Дата последнего обновления \
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \subsection{Сущность \texttt{versions}}
+% Определяет релизы или вехи проекта, к которым могут быть привязаны задачи.
+% \begin{table}[h!]
+% \centering
+% \caption{Атрибуты сущности \texttt{versions}}
+% \label{tab:versions}
+% \begin{tabular}{lll}
+% \toprule
+% \textbf{Поле} & \textbf{Тип данных} & \textbf{Описание} \
+% \midrule
+% \texttt{id} & INTEGER (PK) & Уникальный идентификатор версии \
+% \texttt{project_id} & INTEGER (FK) & Ссылка на проект \
+% \texttt{name} & VARCHAR(255) & Название версии (например, 1.0.0) \
+% \texttt{description} & TEXT & Описание версии \
+% \texttt{status} & VARCHAR(255) & Статус (открыта, закрыта, заблокирована) \
+% \texttt{due_date} & DATE & Планируемая дата релиза \
+% \texttt{created_on} & DATETIME & Дата создания \
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \subsection{Сущность \texttt{repositories}}
+% Обеспечивает интеграцию с внешними системами контроля версий (Git, SVN).
+% \begin{table}[h!]
+% \centering
+% \caption{Атрибуты сущности \texttt{repositories}}
+% \label{tab:repositories}
+% \begin{tabular}{lll}
+% \toprule
+% \textbf{Поле} & \textbf{Тип данных} & \textbf{Описание} \
+% \midrule
+% \texttt{id} & INTEGER (PK) & Уникальный идентификатор репозитория \
+% \texttt{project_id} & INTEGER (FK) & Ссылка на проект \
+% \texttt{url} & VARCHAR(255) & Путь к репозиторию \
+% \texttt{login} & VARCHAR(255) & Логин для доступа (если требуется) \
+% \texttt{password} & VARCHAR(255) & Пароль для доступа (зашифрованный) \
+% \texttt{root_url} & VARCHAR(255) & Корневой URL для веб-доступа \
+% \texttt{type} & VARCHAR(255) & Тип VCS (Git, Subversion, Mercurial) \
+% \bottomrule
+% \end{tabular}
+% \end{table}
+% \section{Заключение по главе}
+Проведенный анализ сущностей системы Redmine позволяет выделить ключевые компоненты, необходимые для построения базы данных системы управления разработкой. Основные связи между сущностями реализуются через внешние ключи (Foreign Keys), обеспечивая целостность данных. Например, сущность \texttt{issues} связана с \texttt{projects}, \texttt{users} и \texttt{versions}, что отражает логику бизнес-процесса: задача создается пользователем в рамках проекта и планируется к определенной версии.
+В следующей главе будет построена концептуальная ER-диаграмма на основе данных таблиц и рассмотрены нормализация отношений.
 
 \subsection[Анализ существующих решений в области СУБД]{Анализ существующих решений в области \\ СУБД}
 Система управления базами данных (СУБД) --- приложение, обеспечивающее создание, хранение, обновление и поиск информации в базах данных.
