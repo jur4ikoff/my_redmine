@@ -4,17 +4,17 @@
 \contentsline {section}{ВВЕДЕНИЕ}{7}{section*.3}%
 \contentsline {section}{\numberline {1}Аналитический раздел}{9}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Описать типовые процессы и роли в redmine, связанные с учебным процессом}{9}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Описать сущности средства управления проектами redmine}{9}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Описать сущности средства управления проектами redmine}{10}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Описание атрибутов сущностей}{10}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Сущность \texttt {users}}{10}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Анализ существующих решений в области СУБД}{10}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.2}Анализ существующих решений в области СУБД}{11}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Иерархическая модель данных}{11}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Сетевая модель данных}{11}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2}Сетевая модель данных}{12}{subsubsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.3}Реляционная модель данных}{12}{subsubsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.4}Документоориентированная модель данных}{13}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4}Документоориентированная модель данных}{14}{subsubsection.2.2.4}%
 \contentsline {subsubsection}{\numberline {2.2.5}Объектно-ориентированная модель данных}{14}{subsubsection.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.6}Колоночная модель данных}{14}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.6}Колоночная модель данных}{15}{subsubsection.2.2.6}%
 \contentsline {subsubsection}{\numberline {2.2.7}Графовая модель данных}{15}{subsubsection.2.2.7}%
 \contentsline {subsubsection}{\numberline {2.2.8}Преимущества и недостатки}{15}{subsubsection.2.2.8}%
-\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{16}{section*.5}%
+\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{17}{section*.5}%
 \contentsfinish 
