@@ -402,24 +402,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzfill-common.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-INPUT ./main.aux
-INPUT ./main.aux
-INPUT main.aux
-INPUT ./report/referat.aux
-INPUT ./report/referat.aux
-INPUT report/referat.aux
-INPUT ./report/00-abbreviation.aux
-INPUT ./report/00-abbreviation.aux
-INPUT report/00-abbreviation.aux
-INPUT ./report/01-introduction.aux
-INPUT ./report/01-introduction.aux
-INPUT report/01-introduction.aux
-INPUT ./report/02-analytical.aux
-INPUT ./report/02-analytical.aux
-INPUT report/02-analytical.aux
-INPUT ./report/07-bibliography.aux
-INPUT ./report/07-bibliography.aux
-INPUT report/07-bibliography.aux
 OUTPUT main.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -431,12 +413,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
-INPUT ./main.out
-INPUT ./main.out
-INPUT main.out
-INPUT main.out
-INPUT ./main.out
-INPUT ./main.out
 OUTPUT main.out
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -458,11 +434,6 @@ INPUT ./report/referat.tex
 INPUT report/referat.tex
 INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/larm1728.tfm
 INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx1728.tfm
-INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-INPUT ./main.toc
-INPUT ./main.toc
-INPUT main.toc
 INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/labx1440.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cmap/ot1.cmap
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cmap/ot1.cmap
@@ -498,10 +469,11 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
-INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/latt1440.tfm
+INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
+INPUT ./main.toc
+INPUT ./main.toc
+INPUT main.toc
 OUTPUT main.toc
 INPUT ./report/00-abbreviation.tex
 INPUT ./report/00-abbreviation.tex
@@ -526,12 +498,31 @@ INPUT ./img/redmine_er_diagram.png
 INPUT ./img/redmine_er_diagram.png
 INPUT ./img/redmine_er_diagram.png
 INPUT ./img/redmine_er_diagram.png
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/latt1728.tfm
+INPUT /Users/ypopov2005/Library/texlive/2025/texmf-var/fonts/tfm/lh/lh-t2a/latt1440.tfm
 INPUT ./diag/bpmn-1.pdf
 INPUT ./diag/bpmn-1.pdf
 INPUT ./diag/bpmn-1.pdf
 INPUT ./diag/bpmn-1.pdf
 INPUT ./diag/bpmn-1.pdf
+INPUT ./diag/BPMN выдачи задания.pdf
+INPUT ./diag/BPMN выдачи задания.pdf
+INPUT ./diag/BPMN выдачи задания.pdf
+INPUT ./diag/BPMN выдачи задания.pdf
+INPUT ./diag/BPMN выдачи задания.pdf
+INPUT ./diag/BPMN выполнения задания.pdf
+INPUT ./diag/BPMN выполнения задания.pdf
+INPUT ./diag/BPMN выполнения задания.pdf
+INPUT ./diag/BPMN выполнения задания.pdf
+INPUT ./diag/BPMN выполнения задания.pdf
+INPUT ./diag/BPMN проверки задания.pdf
+INPUT ./diag/BPMN проверки задания.pdf
+INPUT ./diag/BPMN проверки задания.pdf
+INPUT ./diag/BPMN проверки задания.pdf
+INPUT ./diag/BPMN проверки задания.pdf
 INPUT ./report/07-bibliography.tex
 INPUT ./report/07-bibliography.tex
 OUTPUT report/07-bibliography.aux
