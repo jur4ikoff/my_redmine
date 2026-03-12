@@ -7,202 +7,188 @@ A level-1 auxiliary file: report/01-introduction.aux
 A level-1 auxiliary file: report/02-analytical.aux
 A level-1 auxiliary file: report/07-bibliography.aux
 The style file: modified-utf8gost705u.bst
+A level-1 auxiliary file: report/08-appendix-1.aux
 Database file #1: bibliography.bib
-You're missing a field name---line 25 of file bibliography.bib
- : 
- : %   author  = {Ayhan MUCUR, Togan TONG},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 36 of file bibliography.bib
- : 
- : %   author  = {K. Otas and V. J. Pakenas and A. Vaskys and P. Vaskys},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 46 of file bibliography.bib
- : 
- : %   author  = {И. И. ФИКС},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 56 of file bibliography.bib
+You're missing a field name---line 73 of file bibliography.bib
  : 
  : %   author       = {G. Miller},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 63 of file bibliography.bib
+You're missing a field name---line 80 of file bibliography.bib
  : 
  : %    title = {Ray Tracing: The Next Week},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 71 of file bibliography.bib
+You're missing a field name---line 88 of file bibliography.bib
  : 
  : %    title = {Mathematics for Global Illumination},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 78 of file bibliography.bib
+You're missing a field name---line 95 of file bibliography.bib
  : 
  : %   author       = {А. В. Войтишек},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 85 of file bibliography.bib
+You're missing a field name---line 102 of file bibliography.bib
  : 
  : %   author       = {Microsoft Corporation},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 93 of file bibliography.bib
+You're missing a field name---line 110 of file bibliography.bib
  : 
  : %   author  = {Качурин А.В. and Ильичев В.Ю.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 101 of file bibliography.bib
+You're missing a field name---line 118 of file bibliography.bib
  : 
  : %   author  = {Соколов Ю.А., Волкова Л.Л.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 110 of file bibliography.bib
+You're missing a field name---line 127 of file bibliography.bib
  : 
  : %   title        = {Fog Formulas},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 116 of file bibliography.bib
+You're missing a field name---line 133 of file bibliography.bib
  : 
  : %   author    = {Engel Wolfgang},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 125 of file bibliography.bib
+You're missing a field name---line 142 of file bibliography.bib
  : 
  : %   author    = {Задорожный, А. Г.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 133 of file bibliography.bib
+You're missing a field name---line 150 of file bibliography.bib
  : 
  : %   author    = {Blinn, J. F.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 142 of file bibliography.bib
+You're missing a field name---line 159 of file bibliography.bib
  : 
  : %   author       = {Quilez, I.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 150 of file bibliography.bib
+You're missing a field name---line 167 of file bibliography.bib
  : 
  : %   author    = {Pharr, M. and Jakob, W. and Humphreys, G.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 158 of file bibliography.bib
+You're missing a field name---line 175 of file bibliography.bib
  : 
  : %   author  = {Cook, R. L. and Torrance, K. E.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 168 of file bibliography.bib
+You're missing a field name---line 185 of file bibliography.bib
  : 
  : %   author  = {Kajiya, J. T.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 179 of file bibliography.bib
+You're missing a field name---line 196 of file bibliography.bib
  : 
  : %   title        = {Обратная трассировка лучей},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 185 of file bibliography.bib
+You're missing a field name---line 202 of file bibliography.bib
  : 
  : %   author       = {Hanrahan, P.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 194 of file bibliography.bib
+You're missing a field name---line 211 of file bibliography.bib
  : 
  : %   title        = {Volume Rendering for Developers: Summary of Equations},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 200 of file bibliography.bib
+You're missing a field name---line 217 of file bibliography.bib
  : 
  : %   author       = {Wronski, B.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 209 of file bibliography.bib
+You're missing a field name---line 226 of file bibliography.bib
  : 
  : %   author    = {Zdrojewska, D.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 217 of file bibliography.bib
+You're missing a field name---line 234 of file bibliography.bib
  : 
  : %   title        = {ISO/IEC 14882:2020 Programming Languages --- C++},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 225 of file bibliography.bib
+You're missing a field name---line 242 of file bibliography.bib
  : 
  : %   title        = {Qt 6 Documentation},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 233 of file bibliography.bib
+You're missing a field name---line 250 of file bibliography.bib
  : 
  : %   title        = {Visual Studio Code},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 240 of file bibliography.bib
+You're missing a field name---line 257 of file bibliography.bib
  : 
  : %   title        = {CMake},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 247 of file bibliography.bib
+You're missing a field name---line 264 of file bibliography.bib
  : 
  : %   title        = {GoogleTest --- Google Testing and Mocking Framework},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 254 of file bibliography.bib
+You're missing a field name---line 271 of file bibliography.bib
  : 
  : %   title        = {MacBook Air (13-inch, M3, 2024) - Tech Specs},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 260 of file bibliography.bib
+You're missing a field name---line 277 of file bibliography.bib
  : 
  : %   title        = {Optimization level},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 268 of file bibliography.bib
+You're missing a field name---line 285 of file bibliography.bib
  : 
  : %   author  = {Phong, B. T.},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 3 entries,
+You've used 9 entries,
             3002 wiz_defined-function locations,
-            695 strings with 5977 characters,
-and the built_in function-call counts, 531 in all, are:
-= -- 64
-> -- 10
-< -- 1
-+ -- 5
-- -- 2
-* -- 12
-:= -- 68
-add.period$ -- 10
-call.type$ -- 3
+            727 strings with 7252 characters,
+and the built_in function-call counts, 2109 in all, are:
+= -- 282
+> -- 40
+< -- 7
++ -- 17
+- -- 8
+* -- 64
+:= -- 244
+add.period$ -- 30
+call.type$ -- 9
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 27
-empty$ -- 61
-format.name$ -- 2
-if$ -- 132
+cite$ -- 9
+duplicate$ -- 109
+empty$ -- 231
+format.name$ -- 8
+if$ -- 562
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 9
 missing$ -- 0
-newline$ -- 27
-num.names$ -- 4
-pop$ -- 20
+newline$ -- 59
+num.names$ -- 22
+pop$ -- 68
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 6
+skip$ -- 50
 stack$ -- 0
-substring$ -- 0
-swap$ -- 13
+substring$ -- 64
+swap$ -- 57
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
-width$ -- 4
-write$ -- 51
-(There were 31 error messages)
+while$ -- 14
+width$ -- 10
+write$ -- 135
+(There were 28 error messages)
