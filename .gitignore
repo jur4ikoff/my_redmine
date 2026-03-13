@@ -212,3 +212,5 @@ __marimo__/
 *.bbl
 *.fdb_latexmk
 *OUT*
+
+*.DS_Store

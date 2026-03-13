@@ -1,17 +1,36 @@
 \contentsline {section}{РЕФЕРАТ}{4}{section*.1}%
 \babel@toc {russian}{}\relax 
-\contentsline {section}{ВВЕДЕНИЕ}{6}{section*.2}%
-\contentsline {section}{\numberline {1}Аналитический раздел}{8}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Описать типовые процессы и роли в redmine, связанные с учебным процессом}{8}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Описать сущности средства управления проектами redmine}{8}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Анализ существующих решений в области СУБД}{8}{subsection.1.3}%
-\contentsline {subsubsection}{\numberline {1.3.1}Иерархическая модель данных}{8}{subsubsection.1.3.1}%
-\contentsline {subsubsection}{\numberline {1.3.2}Сетевая модель данных}{9}{subsubsection.1.3.2}%
-\contentsline {subsubsection}{\numberline {1.3.3}Реляционная модель данных}{9}{subsubsection.1.3.3}%
-\contentsline {subsubsection}{\numberline {1.3.4}Документоориентированная модель данных}{11}{subsubsection.1.3.4}%
-\contentsline {subsubsection}{\numberline {1.3.5}Объектно-ориентированная модель данных}{11}{subsubsection.1.3.5}%
-\contentsline {subsubsection}{\numberline {1.3.6}Колоночная модель данных}{12}{subsubsection.1.3.6}%
-\contentsline {subsubsection}{\numberline {1.3.7}Графовая модель данных}{12}{subsubsection.1.3.7}%
-\contentsline {subsubsection}{\numberline {1.3.8}Преимущества и недостатки}{12}{subsubsection.1.3.8}%
-\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{14}{section*.3}%
+\contentsline {section}{ОБОЗНАЧЕНИЯ И СОКРАЩЕНИЯ}{6}{section*.2}%
+\contentsline {section}{ВВЕДЕНИЕ}{7}{section*.3}%
+\contentsline {section}{\numberline {1}Аналитический раздел}{9}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Описание сущностей средства управления проектами redmine}{9}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Описание типовых процессов и ролей в redmine, связанные с учебным процессом}{10}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Процесс выдачи задания}{10}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Процесс выполнения задания}{11}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.3}Прооцесс проверки задачи}{12}{subsubsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.4}Прооцесс доработки задачи}{13}{subsubsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.3}Анализ существующих решений в области СУБД}{14}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Иерархическая модель данных}{14}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Сетевая модель данных}{14}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Реляционная модель данных}{15}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Документоориентированная модель данных}{16}{subsubsection.1.3.4}%
+\contentsline {subsubsection}{\numberline {1.3.5}Объектно-ориентированная модель данных}{16}{subsubsection.1.3.5}%
+\contentsline {subsubsection}{\numberline {1.3.6}Колоночная модель данных}{16}{subsubsection.1.3.6}%
+\contentsline {subsubsection}{\numberline {1.3.7}Графовая модель данных}{16}{subsubsection.1.3.7}%
+\contentsline {section}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}{18}{section*.9}%
+\contentsline {section}{ПРИЛОЖЕНИЕ А}{19}{section*.10}%
+\contentsline {subsubsection}{\numberline {1.3.8}Сущность \texttt {projects}}{19}{subsubsection.1.3.8}%
+\contentsline {subsubsection}{\numberline {1.3.9}Сущность \texttt {users}}{20}{subsubsection.1.3.9}%
+\contentsline {subsubsection}{\numberline {1.3.10}Сущность \texttt {issues}}{20}{subsubsection.1.3.10}%
+\contentsline {subsubsection}{\numberline {1.3.11}Сущность \texttt {trackers}}{21}{subsubsection.1.3.11}%
+\contentsline {subsubsection}{\numberline {1.3.12}Сущность \texttt {issue\_statuses}}{21}{subsubsection.1.3.12}%
+\contentsline {subsubsection}{\numberline {1.3.13}Сущность \texttt {roles}}{21}{subsubsection.1.3.13}%
+\contentsline {subsubsection}{\numberline {1.3.14}Сущность \texttt {members}}{21}{subsubsection.1.3.14}%
+\contentsline {subsubsection}{\numberline {1.3.15}Сущность \texttt {custom\_fields}}{22}{subsubsection.1.3.15}%
+\contentsline {subsubsection}{\numberline {1.3.16}Сущность \texttt {journals}}{22}{subsubsection.1.3.16}%
+\contentsline {subsubsection}{\numberline {1.3.17}Сущность \texttt {attachments}}{22}{subsubsection.1.3.17}%
+\contentsline {subsubsection}{\numberline {1.3.18}Сущность \texttt {wikis}}{23}{subsubsection.1.3.18}%
+\contentsline {subsubsection}{\numberline {1.3.19}Сущности коммуникаций}{23}{subsubsection.1.3.19}%
+\contentsline {subsubsection}{\numberline {1.3.20}Сущности учета времени}{23}{subsubsection.1.3.20}%
+\contentsline {subsubsection}{\numberline {1.3.21}Остальные сущности}{24}{subsubsection.1.3.21}%
 \contentsfinish 
