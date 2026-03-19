@@ -214,3 +214,4 @@ __marimo__/
 *OUT*
 
 *.DS_Store
+*.vscode

@@ -124,3 +124,22 @@
 
 ### Авторизация и регистрация пользователей в системе
 ![alt text](docs/diag/PPO/BPMN-авторизация.png)
+
+
+## Инструкция по развертыванию
+
+```bash
+# Устанавливаем pyenv по инструкции ссылке https://github.com/pyenv/pyenv
+pyenv install 3.13
+cd src
+pyenv local 3.13
+
+# Создаем локальное окружение
+python3 -m venv .venv
+source ./.venv/bin/activate
+
+# Устанавливаем менеджер зависимостей
+pip install poetry
+poetry lock
+poetry install --no-root
+```

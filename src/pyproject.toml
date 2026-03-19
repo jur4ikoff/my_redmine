@@ -1,0 +1,124 @@
+[project]
+name = "control-project-system"
+version = "0.0.1"
+description = "Система контроля версий"
+authors = [
+    {name = "Jur4ikoff",email = "ypopov2005@gmail.com"}
+]
+package-mode = false
+
+requires-python = ">=3.13"
+[tool.poetry.dependencies]
+fastapi = "^0.130.0"
+uvicorn = { extras = ["standard"], version = "^0.40.0" }
+sqlalchemy = "^2.0.0"
+pydantic = "^2.1.0"
+pydantic-settings = "^2.13.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+ruff = "^0.15.7"
+mypy = "^1.19.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+plugins = [
+"pydantic.mypy"
+]
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+no_implicit_reexport = true
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+
+[[tool.mypy.overrides]]
+module = [
+    "allure.*",
+    "plotly.*",
+    "polars.*",
+    "validators.*",
+    "pytest.*"
+]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+exclude = [
+    "config/*", "data/*"
+]
+
+[tool.ruff.lint]
+preview = true
+select = [
+    "A",    # flake8-builtins
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+    "ERA",  # flake8-eradicate/eradicate
+    "RET",  # flake8-return
+    "SIM",  # flake8-simplify
+    "TID",  # flake8-tidy-imports
+    "ANN",  # flake8-annotations
+    "PIE",  # flake8-pie
+    "PLR",  # Pylint
+    "I",    # isort
+    "N",    # pep8-naming
+    "E",    # black
+    "PGH",  # pygrep
+    "RUF",  # ruff checks
+    "F",    # enable pyflakes
+    "UP",   # pyupgrade
+    "C901"  # cyclomatic complexity limit
+]
+ignore = [
+    "B904",   # just ignore use 'raise ... from err'
+    "B905",   # just ingore use explicit 'strict=' parameter with 'zip()'
+    "N818",   # just ignore Exception name should be named with an Error suffix
+    "UP035",  # just ignore use typing instead collections.abc
+    "RUF006", # just ignore store a reference to the return value of `asyncio.create_task`
+    "ANN204", # allow no annotation in result of __init__ and other magic methods
+    "ANN401"  # allow Any to build composite types and pass *args, **kwargs
+]
+unfixable = [
+    "ERA", # do not autoremove commented out code
+]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.isort]
+force-single-line = true
+lines-between-types = 1
+lines-after-imports = 2
+
+[tool.ruff.lint.pylint]
+# check defaults in https://docs.astral.sh/ruff/settings/#lintpylint
+max-args = 10
+max-returns = 10
+max-branches = 15
+max-statements = 75
+max-nested-blocks = 10
+max-locals = 20
+max-public-methods = 25
+
+[tool.ruff.lint.flake8-type-checking]
+exempt-modules = ["typing", "typing_extensions"]
+
+[tool.ruff.format]
+exclude = ["*.pyi"]
+
+[tool.ruff.lint.mccabe]
+# check defaults in https://docs.astral.sh/ruff/settings/#lint_mccabe_max-complexity
+max-complexity = 15
