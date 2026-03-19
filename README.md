@@ -155,3 +155,16 @@
 ### Уровень 4
 Диаграмма кода компонента `UserRepository` (доступа к данным) и `UserService` (сервиса) . В проекте будет выделен `service layer`, а для доступа к данным будет использован паттерн репозиторий.  
 ![alt text](docs/diag/PPO/C4-l4-1.png)
+
+## UML диаграмма
+### Создание задачи
+![alt text](docs/diag/PPO/UML-SEQ-1.png)
+
+### Обновление задачи
+![alt text](docs/diag/PPO/UML-SEQ-2.png)
+
+### Регистрация пользователя в системе
+![alt text](docs/diag/PPO/UML-SEQ-3.png)
+
+## Диаграмма базы данных в нотация DBMN
+![alt text](docs/diag/PPO/DBML.png)
