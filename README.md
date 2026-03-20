@@ -142,4 +142,6 @@ source ./.venv/bin/activate
 pip install poetry
 poetry lock
 poetry install --no-root
+
+cp 
 ```
